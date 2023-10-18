@@ -1,42 +1,47 @@
-<!-- Author: Zayd Mohamed -->
-<!-- Student Number: 8979021 -->
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to Zayd Mohamed's First Website</title>
-  <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-  <style>
-    /* Internal CSS rule to change bullet style, line height, and font color */
-    li {
-      list-style-type: square; /* Change bullet style to square */
-      line-height: 1.8; /* Increase line height */
-      color: rgba(255, 0, 0, 0.6); /* Change font color using RGBA */
-    }
-  </style>
-  <style>
-    /* External CSS rule for the body element */
-    body {
-      font: 16px Arial, sans-serif; /* Shorthand property for font */
-      background-color: hsla(210, 50%, 70%, 0.8); /* HSLA background color */
-      height: 100vh; /* Viewport height */
-      width: 100vw; /* Viewport width */
-    }
-  </style>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- zayd mohamed, student number 8979021 -->
+  <meta name="description" content="A webpage about a famous person.">
+  <meta name="keywords" content="famous person, biography, quotes">
+  <title> Zayd's A1</title>
 </head>
 <body>
-  <h1 style="color: red; font-size: 36px;">Zayd's Very First Website!!</h1>
-  <p>Hello, my name is Zayd Mohamed, and I'm excited to be here as a student. I am new to Waterloo. I recently relocated from Alberta. I am 19 years old, and I have no prior programming experience, but I am truly excited to learn new things and explore the world of technology and programming. The dynamic and forward-thinking community of Waterloo feels like the ideal setting for me to begin this exciting new chapter of my life.</p>
-
-  <p>I'm excited to study the intriguing world of programming and technology here in Waterloo, and I look forward to taking on the challenges and possibilities that come my way. I'm keen to learn new things, contribute to this, and am determined and curious about anything.</p>
-
-  <h2 style="color: #f0a; font-size: 1.25rem;">Links:</h2>
-  <ul>
-    <li><a href="https://www.youtube.com/">Link 1</a></li>
-    <li><a href="https://conestoga.desire2learn.com/d2l/home">Link 2</a></li>
-  </ul>
+  <header>
+    <h1>Aubrey Drake Graham</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Biography</h2>
+      <p>Drake, born <b>Aubrey Drake Graham</b> on October 24, 1986, in Toronto, Canada, is a renowned rapper, singer, songwriter, actor, and entrepreneur. He gained fame through his role on "Degrassi: The Next Generation" before transitioning to music. His hit albums like "Take Care" and "Views" have made him a global icon, and he's known for introspective lyrics. Drake has won numerous awards, including multiple Grammy Awards and has set various records on the Billboard charts, such as the most charted songs by a solo artist in the history of the Billboard Hot 100. He's also involved in entrepreneurship, co-founding OVO Sound and investing in brands. Drake keeps his personal life relatively private but has made headlines for his relationships and family, including his son, Adonis.</p>
+    </section>
+    <section>
+      <h2>Images</h2>
+      <figure class="mainimg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRYdGsX0D1Xg4mqGRsBXDWWggICkn8q5Csg&usqp=CAU" alt="Image 1">
+        <figcaption>Drake sittig down</figcaption>
+      </figure>
+      <figure class="mainimg">
+        <img src="data:image/jpeg;base64,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" alt="Image 2">
+        <figcaption>Drake on the cn tower</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Quotes</h2>
+      <q cite="https://example.com/quote-source">"Never let success get to your head and never let failure get to your heart."</q>
+    </section>
+  </main>
+  <aside>
+    <h2>Additional Information</h2>
+    <ul>
+      <li><a href="https://www.billboard.com/lists/drake-hot-100-records/most-top-10-hot-100-hits/" target="_blank">Drake All-Time Records</a></li>
+      <li><a href="https://www.youtube.com/watch?v=cimoNqiulUE&ab_channel=DrakeVEVO" target="_blank">Music Video</a></li>
+    </ul>
+  </aside>
+  <footer>
+    <p>&copy; Zayd Mohamed 2023</p>
+  </footer>
 </body>
 </html>
-
-
