@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="A webpage about a famous person.">
-  <meta name="keywords" content="famous person, biography, quotes">
-  <title> Zayd's A1</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Aubrey Drake Graham</h1>
+    <h1>Welcome to My Website</h1>
   </header>
-  <main>
-    <section>
-      <h2>Biography</h2>
-      <p>Drake, born <b>Aubrey Drake Graham</b> on October 24, 1986, in Toronto, Canada, is a renowned rapper, singer, songwriter, actor, and entrepreneur. He gained fame through his role on "Degrassi: The Next Generation" before transitioning to music. His hit albums like "Take Care" and "Views" have made him a global icon, and he's known for introspective lyrics. Drake has won numerous awards, including multiple Grammy Awards and has set various records on the Billboard charts, such as the most charted songs by a solo artist in the history of the Billboard Hot 100. He's also involved in entrepreneurship, co-founding OVO Sound and investing in brands. Drake keeps his personal life relatively private but has made headlines for his relationships and family, including his son, Adonis.</p>
-    </section>
-    <section>
-      <h2>Images</h2>
-      <figure class="mainimg">
-        <img src="https://pagesix.com/wp-content/uploads/sites/3/2023/10/NYPICHPDPICT000009313466.jpg?w=1024" alt="Image 1">
-        <figcaption>Drake sitting down</figcaption>
-      </figure>
-      <figure class="mainimg">
-        <img src="https://pagesix.com/wp-content/uploads/sites/3/2023/10/NYPICHPDPICT000009313466.jpg?w=1024" alt="Image 2">
-        <figcaption>Drake on the CN Tower</figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2>Quotes</h2>
-      <q cite="https://example.com/quote-source">"Never let success get to your head and never let failure get to your heart."</q>
-    </section>
-  </main>
-  <aside>
-    <h2>Additional Information</h2>
+
+  <nav class="structural">
     <ul>
-      <li><a href="https://www.billboard.com/lists/drake-hot-100-records/most-top-10-hot-100-hits/" target="_blank">Drake All-Time Records</a></li>
-      <li><a href="https://www.youtube.com/watch?v=cimoNqiulUE&ab_channel=DrakeVEVO" target="_blank">Music Video</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </aside>
-  <footer>
-    <p>&copy; Zayd Mohamed 2023</p>
-  </footer>
+  </nav>
+
+  <main>
+    <h2>Contact</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required autofocus><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <fieldset>
+        <legend>What section of PROG1245 are you in?</legend>
+        <label for="sec4"><input type="radio" id="sec4" name="sec" value="4"> Section 4</label><br>
+        <label for="sec5"><input type="radio" id="sec5" name="sec" value="5"> Section 5</label><br>
+        <label for="sec8"><input type="radio" id="sec8" name="sec" value="8"> Section 8</label><br>
+      </fieldset>
+
+      <label for="help">What do you need help with?</label>
+      <select id="help" name="help" required>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Both (HTML & CSS)" selected>Both (HTML & CSS)</option>
+      </select><br>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" required></textarea><br>
+
+      <label for="human"><input type="checkbox" id="human" name="human" value="true" required> I am a human</label><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
 </body>
+
 </html>
